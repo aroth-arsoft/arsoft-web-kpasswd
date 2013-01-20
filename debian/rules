@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+PYTHON2=$(shell pyversions -vr)
+
+# Don't compress .py files
+DEB_COMPRESS_EXCLUDE := .py
+
+TARGET_DISTRIBUTION := $(shell dpkg-parsechangelog  | awk '/Distribution/ { print $$2}')
+SUBSTVARS=
+
+ifeq ($(TARGET_DISTRIBUTION),lucid)
+	SUBSTVARS += -Vdhcpclient:Depends="dhcp3-client"
+	SUBSTVARS += -Vdhcpserver:Depends="dhcp3-server"
+else
+	SUBSTVARS += -Vdhcpclient:Depends="isc-dhcp-client"
+	SUBSTVARS += -Vdhcpserver:Depends="isc-dhcp-server"
+endif
+
+%:
+	dh $@ --buildsystem=python_distutils --with=python2
+
+override_dh_gencontrol:
+	dh_gencontrol -- $(SUBSTVARS)

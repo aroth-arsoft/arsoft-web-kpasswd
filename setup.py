@@ -1,0 +1,18 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from distutils.core import setup
+
+setup(name='arsoft-web-kpasswd',
+		version='1.0',
+		description='change Kerberos password via web',
+		author='Andreas Roth',
+		author_email='aroth@arsoft-online.com',
+		url='http://www.arsoft-online.com/',
+		packages=['arsoft.web.kpasswd' ],
+		scripts=[],
+		data_files=[
+            ('/usr/share/pyshared/arsoft/web/kpasswd/static', ['arsoft/web/kpasswd/static/main.css']),
+            ('/usr/share/pyshared/arsoft/web/kpasswd/templates', ['arsoft/web/kpasswd/templates/home.html']),
+            ]
+		)
