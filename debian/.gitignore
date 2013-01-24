@@ -1,3 +1,5 @@
 /arsoft-web-kpasswd/
 /*.substvars
 /*.debhelper
+/dirs
+/docs
