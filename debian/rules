@@ -7,13 +7,3 @@ DEB_COMPRESS_EXCLUDE := .py
 
 %:
 	dh $@ --buildsystem=python_distutils --with=python2
-
-override_dh_auto_install:
-	python setup.py install --root=debian/arsoft-web-kpasswd --install-layout=deb
-	mkdir -p debian/arsoft-web-kpasswd/usr/share/pyshared/arsoft/web/kpasswd
-	ln -s /etc/arsoft/web/kpasswd/static debian/arsoft-web-kpasswd/usr/share/pyshared/arsoft/web/kpasswd/static
-	ln -s /etc/arsoft/web/kpasswd/templates debian/arsoft-web-kpasswd/usr/share/pyshared/arsoft/web/kpasswd/templates
-	#ln -s /etc/arsoft/web/kpasswd/static debian/arsoft-web-kpasswd/usr/lib/python2.7/dist-packages/arsoft/web/kpasswd/static
-	#ln -s /etc/arsoft/web/kpasswd/templates debian/arsoft-web-kpasswd/usr/lib/python2.7/dist-packages/arsoft/web/kpasswd/templates
-
-override_dh_auto_build:

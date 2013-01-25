@@ -4,7 +4,7 @@
 from distutils.core import setup
 
 setup(name='arsoft-web-kpasswd',
-		version='1.0',
+		version='1.3',
 		description='change Kerberos password via web',
 		author='Andreas Roth',
 		author_email='aroth@arsoft-online.com',

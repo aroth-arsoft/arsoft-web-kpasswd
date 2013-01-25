@@ -1,3 +1,9 @@
+arsoft-web-kpasswd (1.3) quantal; urgency=low
+
+  * moved static and template files to /etc
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 25 Jan 2013 10:04:51 +0100
+
 arsoft-web-kpasswd (1.2) quantal; urgency=low
 
   * added fcgi dispatch script
