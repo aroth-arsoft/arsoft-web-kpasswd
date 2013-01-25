@@ -9,7 +9,7 @@ setup(name='arsoft-web-kpasswd',
 		author='Andreas Roth',
 		author_email='aroth@arsoft-online.com',
 		url='http://www.arsoft-online.com/',
-		packages=['arsoft.web.kpasswd' ],
+		packages=['arsoft.web', 'arsoft.web.kpasswd'],
 		scripts=[],
 		data_files=[
             ('/usr/share/pyshared/arsoft/web/kpasswd', ['dispatch.fcgi']),
