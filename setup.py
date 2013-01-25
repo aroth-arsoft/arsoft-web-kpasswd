@@ -12,6 +12,7 @@ setup(name='arsoft-web-kpasswd',
 		packages=['arsoft.web.kpasswd' ],
 		scripts=[],
 		data_files=[
+            ('/usr/share/pyshared/arsoft/web/kpasswd', ['dispatch.fcgi']),
             ('/etc/arsoft/web/kpasswd/static', ['arsoft/web/kpasswd/static/main.css']),
             ('/etc/arsoft/web/kpasswd/templates', ['arsoft/web/kpasswd/templates/home.html']),
             ]
