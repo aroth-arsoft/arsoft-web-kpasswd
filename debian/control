@@ -8,6 +8,6 @@ X-Python-Version: >=2.7
 
 Package: arsoft-web-kpasswd
 Architecture: all
-Depends: arsoft-python, ${python:Depends}, ${misc:Depends}
+Depends: arsoft-python-kerberos, python-django, ${python:Depends}, ${misc:Depends}
 Description: change Kerberos password via web
  This service allows you to change your Kerberos password via Web.

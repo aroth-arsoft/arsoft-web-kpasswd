@@ -1,4 +1,11 @@
-arsoft-web-kpasswd (1.0) UNRELEASED; urgency=low
+arsoft-web-kpasswd (1.1) quantal; urgency=low
+
+  * improved configuration
+  * fixed depends
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 25 Jan 2013 07:19:02 +0100
+
+arsoft-web-kpasswd (1.0) quantal; urgency=low
 
   * initial release
 
