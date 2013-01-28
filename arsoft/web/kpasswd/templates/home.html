@@ -13,7 +13,7 @@
 <div class="statusmessage">{{ statusmessage }}</div>
 {% endif %}
 <div class="changepwform">
-<form action="/changepw" method="post">
+<form action="%{ url arsoft.web.kpasswd.views.changepw %}" method="post">
 {% csrf_token %}
 <table class="changepw">
 <tr><td>Username</td><td><input type="text" name="username" id="username" value="{{ username }}" /></td></tr>
