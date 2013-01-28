@@ -4,12 +4,12 @@
 from distutils.core import setup
 
 setup(name='arsoft-web-kpasswd',
-		version='1.3',
+		version='1.4',
 		description='change Kerberos password via web',
 		author='Andreas Roth',
 		author_email='aroth@arsoft-online.com',
 		url='http://www.arsoft-online.com/',
-		packages=['arsoft.web', 'arsoft.web.kpasswd'],
+		packages=['arsoft.web.kpasswd'],
 		scripts=[],
 		data_files=[
             ('/usr/share/pyshared/arsoft/web/kpasswd', ['dispatch.fcgi']),
