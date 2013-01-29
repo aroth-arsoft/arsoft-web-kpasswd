@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -8,6 +9,8 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'arsoft.web.kpasswd.views.home', name='home'),
     url(r'^changepw$', 'arsoft.web.kpasswd.views.changepw', name='changepw'),
+#    url(r'^%s$' % settings.BASE_URL, 'arsoft.web.kpasswd.views.home', name='home'),
+#    url(r'^%s/changepw$' % settings.BASE_URL, 'arsoft.web.kpasswd.views.changepw', name='changepw'),
     # url(r'^arsoft.web.kpasswd/', include('arsoft.web.kpasswd.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

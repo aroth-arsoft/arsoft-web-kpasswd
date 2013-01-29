@@ -1,6 +1,10 @@
 # Django settings for arsoft.web.kpasswd project.
 import os.path
+import time
 
+script_dirname = os.path.dirname(os.path.abspath(__file__))
+
+BASE_URL = 'changepw'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -25,7 +29,7 @@ DATABASES = {
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = time.tzname[0]
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -69,6 +73,7 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     '/etc/arsoft/web/kpasswd/static',
+    os.path.join(script_dirname, 'static')
 )
 
 # List of finder classes that know how to find static files in
@@ -96,7 +101,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
 #    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.RemoteUserMiddleware',
+#    'django.contrib.auth.middleware.RemoteUserMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -116,6 +121,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     '/etc/arsoft/web/kpasswd/templates',
+    os.path.join(script_dirname, 'templates')
 )
 
 INSTALLED_APPS = (

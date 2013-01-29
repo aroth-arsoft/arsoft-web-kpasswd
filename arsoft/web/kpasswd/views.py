@@ -65,6 +65,10 @@ def changepw(request):
             else:
                 error_message = 'Failed to change password. ' + error_message
                 result_code = False
+    else:
+        error_message = 'No user name specified.'
+        result_code = False
+
 
     # Always return an HttpResponseRedirect after successfully dealing
     # with POST data. This prevents data from being posted twice if a
