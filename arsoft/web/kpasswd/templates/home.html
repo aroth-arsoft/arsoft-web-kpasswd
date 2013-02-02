@@ -1,10 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/main.css" />
+<meta charset="utf-8"/>
+{% load static_url %}
+<link rel="stylesheet" type="text/css" href="{% static_url "main.css" %}" />
 <title>{{ title }}</title>
 </head>
 <body>
 <h1 class="title">{{ title }}</h1>
+
 
 {% if errormessage %}
 <div class="errormessage">{{ errormessage }}</div>

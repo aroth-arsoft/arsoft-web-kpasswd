@@ -23,8 +23,7 @@ def home(request):
         username = request.META['REMOTE_USER']
     if 'HTTP_AUTHORIZATION' in request.META:
         username = request.META['HTTP_AUTHORIZATION']
-    #username = ','.join(request.META)
-    
+
     title = 'Change password service'
 
     t = loader.get_template('home.html')
