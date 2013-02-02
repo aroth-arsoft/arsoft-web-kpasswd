@@ -1,3 +1,10 @@
+arsoft-web-kpasswd (1.5) quantal; urgency=low
+
+  * fixed url for static files (css)
+  * use initialize_settings function from arsoft.web.utils
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sat, 02 Feb 2013 17:39:43 +0100
+
 arsoft-web-kpasswd (1.4) quantal; urgency=low
 
   * depend on arsoft-python-web
