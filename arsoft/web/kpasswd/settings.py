@@ -11,7 +11,9 @@ initialize_settings(__name__, __file__)
 
 SITE_ID = 1
 
-DEBUG=True
+# Disable the host verification in the web application. This test must be
+# done in the web server itself.
+ALLOWED_HOSTS = ['*']
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '!lo6bsh)zoifi5(@r2u2&amp;#z=5(5cd6sz$z10iqvzdyv2z-u3v@'
