@@ -6,9 +6,9 @@ case "$1" in
         # make sure django log dir exists
         [ ! -d /var/log/django ] && mkdir /var/log/django
         # ... and create the log file if it does not exist
-        if [ ! -f /var/log/django/arsoft.web.ddns.log ]; then
-            touch /var/log/django/arsoft.web.ddns.log
-            chown www-data:www-data /var/log/django/arsoft.web.ddns.log
+        if [ ! -f /var/log/django/arsoft.web.kpasswd.log ]; then
+            touch /var/log/django/arsoft.web.kpasswd.log
+            chown www-data:www-data /var/log/django/arsoft.web.kpasswd.log
         fi
         ;;
 esac
