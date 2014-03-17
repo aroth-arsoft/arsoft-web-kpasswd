@@ -1,3 +1,10 @@
+arsoft-web-kpasswd (1.6.2) saucy; urgency=low
+
+  * fixed url for django 1.5 in template
+  * fixed wrong path in postinst script
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Mon, 17 Mar 2014 07:51:04 +0100
+
 arsoft-web-kpasswd (1.6.1) saucy; urgency=low
 
   * log file trouble
