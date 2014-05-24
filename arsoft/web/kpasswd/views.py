@@ -19,9 +19,9 @@ def home(request):
         username = ''
         pass
 
-    if 'REMOTE_USER' in request.META:
+    if not username and 'REMOTE_USER' in request.META:
         username = request.META['REMOTE_USER']
-    if 'HTTP_AUTHORIZATION' in request.META:
+    if not username and 'HTTP_AUTHORIZATION' in request.META:
         username = request.META['HTTP_AUTHORIZATION']
 
     title = 'Change password service'
