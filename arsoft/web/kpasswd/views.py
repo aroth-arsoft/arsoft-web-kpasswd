@@ -21,8 +21,14 @@ def home(request):
 
     if not username and 'REMOTE_USER' in request.META:
         username = request.META['REMOTE_USER']
+    if not username and 'HTTP_REMOTE_USER' in request.META:
+        username = request.META['HTTP_REMOTE_USER']
     if not username and 'HTTP_AUTHORIZATION' in request.META:
         username = request.META['HTTP_AUTHORIZATION']
+
+    # drop of the REALM part if there's any
+    if '@' in username:
+        (username, realm) = username.split('@', 1)
 
     title = 'Change password service'
 
