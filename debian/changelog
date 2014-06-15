@@ -1,3 +1,10 @@
+arsoft-web-kpasswd (1.6.3) trusty; urgency=medium
+
+  * add debug url handler
+  * use HTTP_REMOTE_USER header if present to get the username
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sun, 15 Jun 2014 10:27:00 +0200
+
 arsoft-web-kpasswd (1.6.2) saucy; urgency=low
 
   * fixed url for django 1.5 in template
