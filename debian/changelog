@@ -1,3 +1,9 @@
+arsoft-web-kpasswd (1.6.4) vivid; urgency=medium
+
+  * fixed debug url handler
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Mon, 24 Aug 2015 13:57:26 +0200
+
 arsoft-web-kpasswd (1.6.3) trusty; urgency=medium
 
   * add debug url handler
