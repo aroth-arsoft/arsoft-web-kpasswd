@@ -4,3 +4,5 @@
 /dirs
 /docs
 /files
+/debhelper-build-stamp
+*.debhelper.log
