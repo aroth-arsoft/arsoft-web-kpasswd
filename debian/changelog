@@ -1,3 +1,9 @@
+arsoft-web-kpasswd (1.6.6) xenial; urgency=medium
+
+  * use pybuild system
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 13 May 2016 07:22:06 +0200
+
 arsoft-web-kpasswd (1.6.5) xenial; urgency=medium
 
   * rebuild for python3 only

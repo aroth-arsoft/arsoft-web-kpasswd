@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 from distutils.core import setup
 
 setup(name='arsoft-web-kpasswd',
-		version='1.6.5',
+		version='1.6.6',
 		description='change Kerberos password via web',
 		author='Andreas Roth',
 		author_email='aroth@arsoft-online.com',
