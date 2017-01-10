@@ -33,13 +33,13 @@ def home(request):
     title = 'Change password service'
 
     t = loader.get_template('home.html')
-    c = RequestContext( request, { 
+    c = {
         'errormessage':error_message, 
         'statusmessage':status_message,
         'username':username,
         'title':title
-        })
-    return HttpResponse(t.render(c))
+        }
+    return HttpResponse(t.render(c, request))
 
 def changepw(request):
     try:
@@ -81,4 +81,4 @@ def changepw(request):
     request.session['username'] = username
     request.session['error_message'] = error_message
     request.session['result'] = result_code
-    return HttpResponseRedirect(reverse('arsoft.web.kpasswd.views.home'))
+    return HttpResponseRedirect(reverse(home))
