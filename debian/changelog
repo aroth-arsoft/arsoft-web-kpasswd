@@ -1,3 +1,10 @@
+arsoft-web-kpasswd (1.6.7) yakkety; urgency=medium
+
+  * fixed CRSF form errors
+  * adjust for django 1.10
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Tue, 10 Jan 2017 19:33:36 +0100
+
 arsoft-web-kpasswd (1.6.6) xenial; urgency=medium
 
   * use pybuild system
