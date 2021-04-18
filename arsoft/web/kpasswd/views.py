@@ -1,5 +1,5 @@
 from django.template import RequestContext, loader
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import HttpResponseRedirect, HttpResponse
 from arsoft.kerberos.kpasswd import kpasswd
 
