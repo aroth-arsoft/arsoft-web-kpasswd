@@ -10,6 +10,7 @@ from . import views
 urlpatterns = [
     # Examples:
     url(r'^$', views.home, name='home'),
+    url(r'^login$', views.login, name='login'),
     url(r'^changepw$', views.changepw, name='changepw'),
 #    url(r'^%s$' % settings.BASE_URL, 'arsoft.web.kpasswd.views.home', name='home'),
 #    url(r'^%s/changepw$' % settings.BASE_URL, 'arsoft.web.kpasswd.views.changepw', name='changepw'),
